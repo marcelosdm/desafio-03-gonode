@@ -19,6 +19,11 @@ routes.post('/signin', controllers.authController.signin);
 routes.use(authMiddleware);
 
 /**
+ * Users
+ */
+routes.put('/users', controllers.userController.update);
+
+/**
  * Posts
  */
 routes.post('/posts', controllers.postsController.create);
